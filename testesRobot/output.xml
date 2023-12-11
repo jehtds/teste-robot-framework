@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231211 15:59:08.448" rpa="false" schemaversion="4">
+<suite id="s1" name="testesUdemy" source="C:\Users\jessi\Documents\Projetos\teste-robot-framework\testesRobot\testesUdemy.robot">
+<test id="s1-t1" name="Caso de teste 1 - Acesso ao menu Mais Vendidos" line="9">
+<kw name="Abrir o navegador" library="testeUdemyResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 15:59:08.891" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231211 15:59:08.886" endtime="20231211 15:59:16.498"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231211 15:59:16.499" endtime="20231211 15:59:16.661"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:08.886" endtime="20231211 15:59:16.661"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" library="testeUdemyResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231211 15:59:16.666" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20231211 15:59:16.666" endtime="20231211 15:59:20.918"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${maisVendidos}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231211 15:59:20.918" endtime="20231211 15:59:22.862"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:16.661" endtime="20231211 15:59:22.862"/>
+</kw>
+<kw name="Entrar no menu Mais Vendidos" library="testeUdemyResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${maisVendidos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231211 15:59:22.866" level="INFO">Clicking element '//a[contains(.,'Mais Vendidos')]'.</msg>
+<status status="PASS" starttime="20231211 15:59:22.864" endtime="20231211 15:59:25.596"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:22.863" endtime="20231211 15:59:25.596"/>
+</kw>
+<kw name="Verificar titulo da página &quot;Amazon.com.br Mais Vendidos: Os itens mais populares na Amazon&quot;" library="testeUdemyResources" sourcename="Verificar titulo da página &quot;${Titulo}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${Titulo}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20231211 15:59:25.790" level="INFO">Page title is 'Amazon.com.br Mais Vendidos: Os itens mais populares na Amazon'.</msg>
+<status status="PASS" starttime="20231211 15:59:25.598" endtime="20231211 15:59:25.790"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:25.597" endtime="20231211 15:59:25.791"/>
+</kw>
+<kw name=" Fechar o navegador" library="testeUdemyResources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231211 15:59:25.799" endtime="20231211 15:59:28.347"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:25.799" endtime="20231211 15:59:28.347"/>
+</kw>
+<doc>Esse teste verifica o menu Mais Vendidos
+dentro do site da Amazon.com.br</doc>
+<tag>menus</tag>
+<status status="PASS" starttime="20231211 15:59:08.886" endtime="20231211 15:59:28.351"/>
+</test>
+<test id="s1-t2" name="Caso de teste 2 - Acesso ao menu Faça seu login" line="17">
+<kw name="Abrir o navegador" library="testeUdemyResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 15:59:28.372" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231211 15:59:28.372" endtime="20231211 15:59:31.953"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231211 15:59:31.953" endtime="20231211 15:59:32.168"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:28.371" endtime="20231211 15:59:32.168"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" library="testeUdemyResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231211 15:59:32.173" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20231211 15:59:32.168" endtime="20231211 15:59:35.852"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${maisVendidos}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231211 15:59:35.852" endtime="20231211 15:59:36.800"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:32.168" endtime="20231211 15:59:36.800"/>
+</kw>
+<kw name="Clicar no menu com três barras" library="testeUdemyResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${abrirMenus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231211 15:59:36.804" level="INFO">Clicking element '//i[contains(@class,'hm-icon nav-sprite')]'.</msg>
+<status status="PASS" starttime="20231211 15:59:36.803" endtime="20231211 15:59:37.108"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:36.803" endtime="20231211 15:59:37.108"/>
+</kw>
+<kw name="Scrollar a tela até o final" library="testeUdemyResources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${titleMenus}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231211 15:59:37.110" endtime="20231211 15:59:37.743"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>locator=${façaLogin}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20231211 15:59:37.743" endtime="20231211 15:59:38.107"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:37.109" endtime="20231211 15:59:38.107"/>
+</kw>
+<kw name="Clicar em Faça seu login" library="testeUdemyResources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${façaLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231211 15:59:38.112" level="INFO">Clicking element '//a[@class='hmenu-item'][contains(.,'Faça seu login')]'.</msg>
+<status status="PASS" starttime="20231211 15:59:38.112" endtime="20231211 15:59:39.432"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:38.107" endtime="20231211 15:59:39.432"/>
+</kw>
+<kw name="Validar direcionamento para a tela &quot;Fazer login&quot;" library="testeUdemyResources" sourcename="Validar direcionamento para a tela &quot;${fazerLogin}&quot;">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>locator=//h1[@class='a-spacing-small'][contains(.,'${fazerLogin}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231211 15:59:39.491" level="INFO">Element '//h1[@class='a-spacing-small'][contains(.,'Fazer login')]' is displayed.</msg>
+<status status="PASS" starttime="20231211 15:59:39.437" endtime="20231211 15:59:39.491"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:39.432" endtime="20231211 15:59:39.491"/>
+</kw>
+<kw name=" Fechar o navegador" library="testeUdemyResources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231211 15:59:39.491" endtime="20231211 15:59:41.934"/>
+</kw>
+<status status="PASS" starttime="20231211 15:59:39.491" endtime="20231211 15:59:41.934"/>
+</kw>
+<doc>Esse teste acessa a tela para realizar o login
+através do menu na parte superior esquerda da tela</doc>
+<tag>login</tag>
+<status status="PASS" starttime="20231211 15:59:28.361" endtime="20231211 15:59:41.934"/>
+</test>
+<doc>Esta suite testa o site da amazon</doc>
+<status status="PASS" starttime="20231211 15:59:08.453" endtime="20231211 15:59:41.953"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="testesUdemy">testesUdemy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
