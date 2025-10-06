@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: meu-servico
+  description: Serviço de exemplo do meu portfólio
+  annotations:
+    github.com/project-slug: jessicateixeira/meu-servico
+spec:
+  type: service
+  lifecycle: experimental
+  owner: jessica
