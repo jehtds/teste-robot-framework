@@ -4,7 +4,7 @@ metadata:
   name: meu-servico
   description: Serviço de exemplo do meu portfólio
   annotations:
-    github.com/project-slug: jessicateixeira/meu-servico
+    github.com/project-slug: jessicateixeira/teste-robot-framework
 spec:
   type: service
   lifecycle: experimental
