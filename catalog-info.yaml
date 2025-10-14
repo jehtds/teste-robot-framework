@@ -8,11 +8,16 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: jessica
-providesApis:
-  - ms-jessica-api
+  owner: group:jessica
+  providesApis:
+    - ms-jessica-api
+---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: ms-jessica-api
   description: Serviço de exemplo do meu portfólio - API
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: group:jessica
