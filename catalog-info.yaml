@@ -9,3 +9,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: jessica
+providesApis:
+  - ms-jessica-api
