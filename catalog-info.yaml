@@ -7,5 +7,5 @@ metadata:
     github.com/project-slug: jehtds/teste-robot-framework
 spec:
   type: service
-  owner: user:jessica
+  owner: user:default/jessica
   lifecycle: experimental
